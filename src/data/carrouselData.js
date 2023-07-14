@@ -18,18 +18,18 @@ const carrouselData = [
     sub: "",
   },
   {
-    img: img2,
-    text: "Gasthof Lichtenberger Hof",
+    img: img11,
+    text: "",
     sub: "",
   },
   {
     img: img3,
-    text: "Lichtenberger Straße",
+    text: "Morsbacher Straße",
     sub: "",
   },
   {
     img: img4,
-    text: "Lichtenberg View",
+    text: "Kännchenbrunnen",
     sub: "",
   },
   {

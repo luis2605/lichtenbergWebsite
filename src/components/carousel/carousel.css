@@ -6,31 +6,26 @@
   box-shadow: 7.5px 4px 13px -5.5px #000000;
 
 }
-.caption-container{
- background-color:whitesmoke;
- color:black ;
- font-size: 1.3rem;
- padding: 1em 2em;
- position: absolute;
- right: 60%;
- bottom:5em;
- background: var(  --sec-text-color);
-
- font-family: "Oswald", sans-serif;
-
- box-shadow: 7.5px 4px 13px -5.5px #000000;
-
- padding: 0.3em 0.5em;
- font-size: 1.2rem;
- font-weight: 700;
- line-height: 1.2;
- color: #ffffff;
- background: var(--logo-dgreen);
- letter-spacing: 5px;
-
- border-radius: 5px;
-
-}
+.caption-container {
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  background: rgba(83,109,74,.15);
+  border: 1px solid rgba(83,109,74,.075);
+  border-radius: 5px;
+  border-radius: 15px;
+  bottom: 5em;
+  box-shadow: 7.5px 4px 13px -5.5px #000;
+  color: #000;
+  color: #fff;
+  font-family: Oswald,sans-serif;
+  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 1.2;
+  padding: 0.3em 0.5em;
+  position: absolute;
+  right: 70%; }
 .caption-title{
  
   font-size: 1.5rem;
