@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import {  Link , NavLink } from "react-router-dom";
 import logo from "../../assets/img/Logo-Lichtenberg_white.png";
 
 import classes from "./header.module.css";
@@ -132,7 +132,7 @@ const [headerSmall ,setHeaderSmall] = useState(false);
     <>
       <header className={isScrolledDown ? "" : classes["transparent"] }>
       
-      <Link  className={classes["header_link"]} onClick={scrollUp} to="/Lichtenberg"> <img className={headerSmall? classes["header-small"] : classes["header_logo"]   } src={logo} alt="logo"></img></Link>
+      <Link  className={classes["header_link"]} onClick={scrollUp} to="/"> <img className={headerSmall? classes["header-small"] : classes["header_logo"]   } src={logo} alt="logo"></img></Link>
         <nav >
           <ul className={classes["header_nav-list"]}>
             <li > 
@@ -141,7 +141,7 @@ const [headerSmall ,setHeaderSmall] = useState(false);
                   className={`${classes["glitch"]} ${classes.g0}`}
                   data-glitch="Startseite"
                 >
-                  <Link onClick={scrollUp} to="/Lichtenberg"> Startseite </Link>
+                  <Link onClick={scrollUp} to="/"> Startseite </Link>
                 </div>
               </div>
             </li>
@@ -151,7 +151,7 @@ const [headerSmall ,setHeaderSmall] = useState(false);
                   className={`${classes["glitch"]} ${classes.g1}`}
                   data-glitch="glitch"
                 >
-                  <Link onClick={scrollUp} to="/%C3%BCber"> Über uns </Link>
+                  <NavLink onClick={scrollUp} to="/uber"> Über uns </NavLink>
                 </div>
               </div>
             </li>

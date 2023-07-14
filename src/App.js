@@ -65,19 +65,21 @@ function App() {
       )}
 
 
-   
+<Header></Header>
     
-     <Header></Header>
-     
+    
+    
       <Routes>
-        <Route path="/Lichtenberg" element={<Home />}></Route>
-        <Route path="/%C3%BCber" element={<UberUns />}></Route>
+      
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/uber" element={<UberUns />}></Route>
         <Route path="/aktuelles" element={<Aktuelles />}></Route>
         <Route path="/mitglied" element={<Mitglied />}></Route>
         <Route path="/kontakt" element={<Contact />}></Route>
         <Route path="/spenden" element={<Spenden />}></Route>
         <Route path="/impressum" element={<Impressum />}></Route>
         <Route path="/datenschutz" element={<Datenschutz />}></Route>
+      
       </Routes>
       <Footer></Footer>
     </div>
