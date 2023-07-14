@@ -1,0 +1,83 @@
+.wieso-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background: var(--sec-text-color);
+    padding: 3em 2em;
+    margin: 1em 3em;
+   
+
+    box-shadow: 7.5px 4px 13px -5.5px #000000;
+  }
+
+.wieso-text{
+  display: grid;
+  grid-template-areas: "lu ru"
+                       "ld rd";
+}
+.wieso-more{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.see-more {
+  width:40px;
+  cursor: pointer;
+}
+/* .wieso-points{
+  display: flex;
+  margin: 1em 2em;
+  text-align: justify;
+} */
+.wieso-points p {
+  font-size: 2rem;
+  font-family: "Noto Serif", serif;
+  margin: 0 1em;
+  text-align: justify;
+}
+/* .yellow{
+  width: 50px;
+  height: 50px;
+  margin-right: .5em;
+} */
+
+
+
+/*aux*/
+
+.marked{
+  color: var( --logo-lgreen);
+  font-size: 2.3rem;
+}
+/*medias queries*/
+
+@media (max-width: 768px) {
+  
+.wieso-points p {
+  font-size: .6rem;
+  font-family: "Noto Serif", serif;
+}
+
+.marked{
+  color: var( --logo-lgreen);
+  font-size: 1rem;
+}
+}
+@media (max-width: 425px) {
+  
+.wieso-text{
+  display: flex;
+flex-direction: column;
+}
+
+.yellow{
+  width: 25px;
+  height: 25px;
+  margin-right: .5em;
+}
+.wieso-points p {
+  font-size: .9rem;
+  font-family: "Noto Serif", serif;
+}
+  }
