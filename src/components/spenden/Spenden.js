@@ -14,9 +14,9 @@ const Spenden = () => {
         <p>Institut: Volksbank Oberberg</p>
         <p>Verwendungszweck: Spende "Lichtenberg"</p>
         </div>
-        <p>Mit Ihrer Spende unterstützen Sie gezielt die Darstellung der Historie unseres Dorfes! Sie erhalten Informationen über alle Aktivitäten des Vereins und seiner Mitglieder.</p>
+        <p>Mit Ihrer Spende unterstützen Sie die Arbeit und den Zusammenleben in Lichtenberg. Sie erhalten Informationen über alle Aktivitäten des Vereins und seiner Mitglieder.</p>
         <p>Wünschen Sie eine Spendenbescheinigung, fordern Sie diese bitte unter folgender E-Mail-Adresse an: <a href="mailto:dg-lichtenberg@gmx.de?&subject=Mail from our Website">dg-lichtenberg@gmx.de</a> </p>
-        <p>Sie erhalten die Gewissheit, dass 100% Ihrer Spende für die Projekte des Heimatvereins Lichtenberg eingesetzt werden.</p>
+        <p>Sie erhalten die Gewissheit, dass 100% Ihrer Spende für die Projekte der Dorfgemeinschaft Lichtenberg eingesetzt werden.</p>
         
         </div>    
     {/* <div className={classes["spenden-paypal"]}>

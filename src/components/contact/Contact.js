@@ -48,17 +48,17 @@ const fontSize = `${Math.min(maxFontSize, Math.max(minFontSize, newFontSize))}px
         <div className={classes["contact-header"]}>
         <h2 className={classes["contact-title"]}>Willkommen auf unserer Kontaktseite für die Dorfgemeinschaft!</h2>
      <h4 className={classes["contact-subtitle"]}>Hier können Sie uns auf einfache Weise kontaktieren, um uns Fragen zu stellen, Feedback zu geben oder uns über Veranstaltungen oder Aktivitäten in der Gemeinde zu informieren. </h4>
-     <h4 className={classes["contact-subtitle"]}>Wir sind stolz darauf, eine enge und freundliche Gemeinschaft zu sein, die sich darauf konzentriert, das Leben in unserem Dorf so angenehm wie möglich zu gestalten. Wir freuen uns darauf, von Ihnen zu hören und helfen gerne bei allem, was wir können! </h4>
+     <h4 className={classes["contact-subtitle"]}>Wir sind stolz darauf, eine enge und freundliche Gemeinschaft zu sein, die sich darauf konzentriert, das Leben in unserem Dorf so angenehm wie möglich zu gestalten. Wir freuen uns darauf, von Ihnen zu hören und helfen gerne bei allem, wo wir können! </h4>
         </div>
         <div className={classes["contact-body"]}>
-            <h3 className={classes["indication"]}>Benutzen Sie bitte das unten stehende Formular</h3>
+            <h3 className={classes["indication"]}>Benutzen Sie bitte das <br></br> unten stehende Formular</h3>
         <EmailForm/>
 
         </div>
 
         </div>
        
-        <h3 className={classes["indication1"]}>Oder nutzen Sie bitte das Whatsapp Link (nur Mobile)</h3>
+        <h3 className={classes["indication1"]}>Oder nutzen Sie bitte den Whatsapp Link (nur Handy)</h3>
     <div className={classes["whatsapp-input"]}>
         <img className={classes.whatsappIcon} src={whatsapp} alt="Whatsapp Icon"/>
          {/* <input className={classes.formTextarea}

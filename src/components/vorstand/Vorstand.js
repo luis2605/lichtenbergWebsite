@@ -7,7 +7,7 @@ const Vorstand = () => {
  console.log(vorstandData)
    const [vorstandListe ,setVorstandListe]=useState(vorstandData)
 
-   console.log(vorstandListe)
+   
 
    const vorstandContainer = vorstandListe.map((vorst,index)=>{
     

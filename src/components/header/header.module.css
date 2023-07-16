@@ -180,7 +180,7 @@ width: 70px;
 .transparent {
   background-color: transparent;
   justify-content: center;
-  height: 160px;
+  height: auto;
 }
 
 .none {

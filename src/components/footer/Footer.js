@@ -17,12 +17,12 @@ export const Footer = () => {
           <div className={classes["adress-info-adress"]}>
           <div className={classes["adress-info"]}>
           <p className={classes["info-text"]}>Dorfgemeinschaft Lichtenberg </p>
-          <p className={classes["info-text"]}>zu den Garten 39a</p>
+          <p className={classes["info-text"]}>Zu den Garten 39a</p>
           <p className={classes["info-text"]}>51597 Morsbach</p>
           </div>
 
           <div className={classes["adress"]}>
-          <p className={classes["info-text"]}>Telefon: +01701796321</p>
+          <p className={classes["info-text"]}>Telefon: 0170 1796321</p>
           <p className={classes["info-text"]}>E-Mail: dg-lichtenberg@gmx.de</p>
         </div>
         </div>
@@ -44,23 +44,23 @@ export const Footer = () => {
             <img
               className={classes["social-icons"]}
               src={socialInsta}
-              alt="fb-icon"
+              alt="insta-icon"
             ></img>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100069270243759">
+          {/* <a href="https://www.facebook.com/profile.php?id=100069270243759">
             <img
               className={classes["social-icons"]}
               src={socialYoutube}
               alt="fb-icon"
             ></img>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100069270243759">
+          </a> */}
+          {/* <a href="https://www.facebook.com/profile.php?id=100069270243759">
             <img
               className={classes["social-icons"]}
               src={socialTiktok}
               alt="fb-icon"
             ></img>
-          </a>
+          </a> */}
           </div>
         
         </div>

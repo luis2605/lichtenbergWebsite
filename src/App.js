@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,useLocation  } from "react-router-dom";
 import Header from "./components/header/Header";
 import React, { useState, useEffect } from 'react';
 import { Home } from "./components/home/Home";
@@ -20,9 +20,9 @@ function App() {
 
  
   const [showModal, setShowModal] = useState(false);
-
-
-  
+  /*rendering dyn the location to the title property  */
+  const location = useLocation();
+  const [pageTitle, setPageTitle] = useState("Default Title");
 
   const handleCloseModal = () => {
     Cookies.set('mywebsite', 'true', { expires: 365 });
@@ -35,6 +35,40 @@ function App() {
     }
   , []);
 
+  useEffect(() => {
+    const title = getTitleFromPath(location.pathname);
+    setPageTitle(title);
+
+    // Update the document title
+    document.title = `${pageTitle} | Dorfgemeinschaft Lichtenberg`; // Change "Your Website Name" to your actual website name
+  }, [location.pathname, pageTitle]);
+
+
+  const getTitleFromPath = (pathname) => {
+    // Logic to determine the title based on the pathname
+    // For example, you can use a switch statement to match different paths
+    switch (pathname) {
+      case "/":
+        return "Home Page";
+      case "/uber":
+        return "Über Uns";
+      case "/aktuelles":
+        return "Aktuelles";
+      case "/mitglied":
+        return "Mitglied";
+      case "/kontakt":
+        return "Kontakt";
+      case "/spenden":
+        return "Spenden";
+      case "/impressum":
+        return "Impressum";
+        case "/datenschutz":
+          return "Datenschutz";
+      // Add other cases for different paths
+      default:
+        return "Default Title";
+    }
+  };
     // scroll to the beginning of the page
 
     const scrollUp =()=>{

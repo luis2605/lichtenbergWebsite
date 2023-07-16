@@ -6,6 +6,7 @@ const EmailForm = () => {
   const [toEmail, setToEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,14 +16,16 @@ const EmailForm = () => {
       subject: subject,
       message: body
     };
-
+  
     emailjs.send('service_u4nl9o3', 'template_8h9p49o', templateParams, 'jkwvkKVm-ubZY92ZJ')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-      }, (error) => {
+        setSent(true); // Update the sent state to true
+      })
+      .catch((error) => {
         console.log('FAILED...', error);
       });
-
+    
     setToEmail('');
     setSubject('');
     setBody('');
@@ -42,6 +45,7 @@ const EmailForm = () => {
         Nachricht:
         <textarea className={styles.formTextarea} value={body} onChange={(e) => setBody(e.target.value)}  placeholder="Bitte schreiben Sie Ihre Nachricht hier..." required />
       </label>
+      {sent && <p>Die E-Mail wurde erfolgreich gesendet!</p>}
       <button className={styles.formButton} type="submit">Send Email</button>
     </form>
   );

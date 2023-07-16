@@ -7,7 +7,7 @@ function Impressum() {
       <h1>Impressum</h1>
       <div className={styles.contactInfo}>
         <p>Dorfgemeinschaft Lichtenberg e.V.</p>
-        <p>zu den Gärten 39 a</p>
+        <p>Zu den Gärten 39a</p>
         <p>51597 Morsbach</p>
         <p>Telefon: 01701796321</p>
         <p>E-Mail:dg-lichtenberg@gmx.de</p>
@@ -16,12 +16,13 @@ function Impressum() {
       <div className={styles.vorstand}>
         <p>Vertretungsberechtigter Vorstand:</p>
         <p>Timo Neuber (1. Vorsitzende)</p>
-        {/* <p>Vorname Nachname (2. Vorsitzender)</p> */}
-        {/* <p>Vorname Nachname (Kassenwart)</p> */}
+        <p>Christian Krüger</p>
+        <p>Jan-Luca Kinzelmann</p>
+     
       </div>
       <div className={styles.registerInfo}>
-        <p>Registergericht: Amtsgericht Vereinsstadt</p>
-        <p>Registernummer: VR 12345</p>
+        <p>Registergericht: Amtsgericht Siegburgt</p>
+        <p>Registernummer: VR 379</p>
       </div>
       <div className={styles.verantwortlich}>
         <p>Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:</p>

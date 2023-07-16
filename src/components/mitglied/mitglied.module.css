@@ -42,6 +42,17 @@
   
     margin:2em 1em 
 }
+
+.mitglied-btn:active {
+    transform: translateY(2px); /* You can adjust the value to control the depth of the "press" effect */
+  
+  }
+
+  .back-btn:active {
+    transform: translateY(2px); /* You can adjust the value to control the depth of the "press" effect */
+   
+  }
+ 
 @media (min-width:360px) {
 
     .mitglied-img{
@@ -59,5 +70,12 @@
 
     .mitglied-img{
         width: 700px
+    }
+    .mitglied-btn {
+       
+     
+      
+        padding: .5em 1em;
+      
     }
 }

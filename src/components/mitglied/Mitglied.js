@@ -43,7 +43,7 @@ const Mitglied = () => {
 
         <p className={classes["mitglied-btn"]}>
   {" "}
-  <Link onClick={scrollUp} to="/%C3%BCber"> ◻️ Zurück </Link>
+  <Link className={classes["back-btn"]}  onClick={scrollUp} to="/uber"> ◻️ Zurück </Link>
 </p>
 
         </div>

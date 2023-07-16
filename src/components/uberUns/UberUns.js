@@ -1,10 +1,11 @@
 import React from 'react'
 import classes from './uberUns.module.css'
 import lichtenbergOther from '../../assets/img/Lichtenbergother.png'
-import infografik from '../../assets/img/infografik.png'
+import infografik from '../../assets/img/infografik.webp'
 import vorstandBig from '../../assets/img/vorstand-big.gif'
 import { Route, Routes, Link } from "react-router-dom";
 import Vorstand from '../vorstand/Vorstand'
+import lichtenbergSign from '../../assets/img/lichtenbergSign.png'
 const uberUns = () => {
    // scroll to the beginning of the page
 
@@ -42,18 +43,20 @@ const uberUns = () => {
   <h2 className={classes["vereine-title"]}>Unsere Vereine:  </h2>
   <ul className={classes["vereine-list"]}>
     <li className={classes["vereine-li"]}>Die Dorfgemeinschaft Lichtenberg e.V.</li>
-    <li className={classes["vereine-li"]}> <a href='https://mgv-hoffnung.jimdo.com/'>Der Männergesangverein MGV Hoffnung</a></li>
-    <li className={classes["vereine-li"]}> <a href='https://www.katholisch-mfw.de/erleben-mitmachen/frauen/kath.-frauengemeinschaft-lichtenberg-kfd/#:~:text=Die%20Zugeh%C3%B6rigkeit%20zum%20gr%C3%B6%C3%9Ften%20Frauenverband,sie%20mit%20unseren%20spirituellen%20F%C3%A4higkeiten.'>Die katholische Frauengemeinschaft kfd</a></li>
-    <li className={classes["vereine-li"]}>Die Jugendgruppe KLJB</li>
-    <li className={classes["vereine-li"]}> <a href='https://www.facebook.com/ErntedankfestLichtenberg/?locale=de_DE'>Der Erntedankfest-Festausschuss</a></li>
-    <li className={classes["vereine-li"]}> <a href='http://www.musikverein-lichtenberg.de/'>Der Musikverein</a></li>
+    <li className={classes["vereine-li" ]}> <a target='_blank' rel="noreferrer" href='https://www.facebook.com/p/MGV-Hoffnung-Lichtenberg-100082529083026/'>Der Männergesangverein MGV Hoffnung</a></li>
+    <li className={classes["vereine-li"]}> <a target='_blank' rel="noreferrer" href='https://www.katholisch-mfw.de/erleben-mitmachen/frauen/kath.-frauengemeinschaft-lichtenberg-kfd/#:~:text=Die%20Zugeh%C3%B6rigkeit%20zum%20gr%C3%B6%C3%9Ften%20Frauenverband,sie%20mit%20unseren%20spirituellen%20F%C3%A4higkeiten.'>Die katholische Frauengemeinschaft kfd</a></li>
+    <li className={classes["vereine-li"]}>Die Jugendgruppe KLJB/Kolping Jugend</li>
+    <li className={classes["vereine-li"]}> <a  target='_blank' rel="noreferrer" href='https://www.facebook.com/ErntedankfestLichtenberg/?locale=de_DE'>Der Erntedankfest-Festausschuss</a></li>
+    <li className={classes["vereine-li"]}> <a  target='_blank' rel="noreferrer" href='http://www.musikverein-lichtenberg.de/'>Der Musikverein</a></li>
     <li className={classes["vereine-li"]}>Die Säuköppe</li>
-    <li className={classes["vereine-li"]}> <a href='https://www.ftc-lichtenberg.de/'>Der Tennisverein FTC</a></li>
+    <li className={classes["vereine-li"]}> <a target='_blank' rel="noreferrer"  href='https://www.ftc-lichtenberg.de/'>Der Tennisverein FTC</a></li>
     <li className={classes["vereine-li"]}>Der Förderverein des Kindergartens</li>
     <li className={classes["vereine-li"]}>Der Förderverein der Grundschule</li>
-    <li className={classes["vereine-li"]}> <a href='http://www.nebelkraehen.de//'>Die Pfadfinder Nebelkrähen</a></li>
+    <li className={classes["vereine-li"]}> <a target='_blank' rel="noreferrer" href='http://www.nebelkraehen.de//'>Die Pfadfinder Nebelkrähen</a></li>
     <li className={classes["vereine-li"]}>Die Wilde 13</li>
-
+    <li className={classes["vereine-li"]}> <a  target='_blank' rel="noreferrer" href='https://www.facebook.com/CANTAMOS.info/?locale=de_DE'>Cantamos Chor</a></li>
+    <li className={classes["vereine-li"]}>Trecker Club</li>
+    <li className={classes["vereine-li"]}> <a  target='_blank' rel="noreferrer" href='https://feuerwehr-morsbach.nrw/foeoerdervereine/foerderverein-loeschzug-lichtenberg-e-v/'>Förderverein Löschzug Lichtenberg E.V.</a></li>
  
   </ul>
 </div>
@@ -71,8 +74,10 @@ const uberUns = () => {
 
   <p className={`${classes["mitglied-btn"]} ${classes["pulsate-bck"]}`}>
   {" "}
-  <Link onClick={scrollUp} to="/mitglied"> Jetz Mitglied werden </Link>
+  <Link className={classes["become-btn"]} onClick={scrollUp} to="/mitglied"> Jetz Mitglied werden </Link>
 </p>
+
+<img className={classes["lichtenbergSign"]} src={lichtenbergSign} alt="einfach shön hier"></img>
 </div> 
     </div>
   )
