@@ -21,7 +21,7 @@ function Impressum() {
      
       </div>
       <div className={styles.registerInfo}>
-        <p>Registergericht: Amtsgericht Siegburgt</p>
+        <p>Registergericht: Amtsgericht Siegburg</p>
         <p>Registernummer: VR 379</p>
       </div>
       <div className={styles.verantwortlich}>

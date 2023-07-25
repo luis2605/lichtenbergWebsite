@@ -9,6 +9,7 @@ import foto6 from '../assets/img/vorstand/IMG_3495-removebg-preview.png'
 import foto7 from '../assets/img/vorstand/IMG_3512-removebg-preview.png'
 import foto8 from '../assets/img/vorstand/WhatsApp_Image_2023-05-23_at_18.31.56-removebg-preview.png'
 import foto9 from '../assets/img/vorstand/WhatsApp_Image_2023-05-23_at_18.43.50-removebg-preview.png'
+import foto10 from '../assets/img/vorstand/WhatsApp_Image_2023-07-18_at_19.29.35-removebg-preview.png'
 const vorstandData =[
     {
       img: foto3,
@@ -63,6 +64,13 @@ const vorstandData =[
       img: foto9,
       name: "Gabi Krüger",
       position: "Beisitzerin",
+      tel: "",
+      email: "",
+    },
+    {
+      img: foto10,
+      name: "Heiko Förtsch",
+      position: "Beisitzer",
       tel: "",
       email: "",
     },
