@@ -32,7 +32,7 @@ const Wieso = () => {
   return (
     <div className={classes["wieso-container"]}>
       
-      <h1>Wieso Lichtenberg ?</h1>
+      <h2>Wieso Lichtenberg ?</h2>
       <div className={classes["wieso-text"]}>
       <div className={classes["wieso-points"]}>
         {/* <img src={marker} alt="yellow dots" className={classes.yellow}></img> */}
