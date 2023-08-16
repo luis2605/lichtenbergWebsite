@@ -122,7 +122,7 @@ const [headerSmall ,setHeaderSmall] = useState(false);
       <li className={classes["sidebar-elements"]} key={index}>
         {/* <span className={classes["sidebar-icon"]}>{bar.icon}</span> */}
         <img src={bar.imgSource} alt={bar.title} className={classes["sidebar-icon"]}   />
-        <Link onClick={scrollUp} to={bar.ref}>{bar.name} </Link>
+        <Link className={classes.sidebarLink} onClick={scrollUp} to={bar.ref}>{bar.name} </Link>
       </li>
     );
   });

@@ -131,6 +131,9 @@ margin-bottom: 1em;
 .sidebar-elements a {
   color: var( --primary-text-color);
 }
+.sidebar-elements a:hover {
+ color: var(--form-control-color)
+}
 .sidebar-icon {
   
 width: 70px;

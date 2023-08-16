@@ -9,13 +9,13 @@ import mitglied from "../assets/sidebar_gifs/mitglied.gif"
 const sidebarData = [
   {
     name: "Startseite",
-    ref: "/Lichtenberg",
+    ref: "/",
     icon: <BiIcons.BiLayout />,
     imgSource:start
   },
   {
     name: "Über uns",
-    ref: "/%C3%BCber",
+    ref: "/uber",
     icon: <BiIcons.BiNetworkChart />,
     imgSource:uber
   },
