@@ -19,7 +19,7 @@ const carrouselData = [
   },
   {
     img: img11,
-    text: "",
+    text: "Rinnchen",
     sub: "",
   },
   {
@@ -62,7 +62,5 @@ const carrouselData = [
     text: "Lichtenberg von oben",
     sub: "",
   },
- 
-
 ];
 export default carrouselData;
